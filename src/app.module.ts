@@ -1,8 +1,9 @@
 import { Module } from '@nestjs/common';
 import { NetworkModule } from './modules/network/network.module';
+import { RoutingModule } from './modules/routing/routing.module';
 
 @Module({
-  imports: [NetworkModule],
+  imports: [NetworkModule, RoutingModule],
   controllers: [],
   providers: [],
 })
